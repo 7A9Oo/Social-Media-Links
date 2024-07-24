@@ -1,0 +1,138 @@
+/*  import font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* start rules */
+* {
+    box-sizing: border-box;
+    font-family:  'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+:root {
+    --green-main : hsl(75, 94%, 57%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --white:hsl(0, 0%, 100%);
+
+}
+/*  end rules */
+
+/* start component */
+/* center text  */
+.center-text{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* end component */
+
+main {
+    min-height: 100vh;
+    background-color: var(--grey-900)
+}
+main section{
+    width: 383px;
+    height: 611px;
+    border-radius: 20px;
+    background-color: var(--grey-800);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 12px 17px 1px var(--grey-900);
+}
+/* mobile */
+@media (max-width:375px){
+    main section{
+        width: 327px;
+        height: 580px;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    main section .info p:last-of-type {
+        margin-bottom: 20px;
+
+    }
+}
+main section .info img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+main section .info h2{
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+/* mobile */
+@media (max-width:375px){
+    main section .info h2{
+        margin-bottom: 15px;
+    }
+}
+
+main section .info p:first-of-type{
+    margin-bottom: 30px;
+    color: var(--green-main);
+    font-size: 0.875rem;
+    font-weight: 700;
+
+
+}
+
+main section .info p:last-of-type {
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+/* mobile */
+@media (max-width:375px){
+    main section .info p:last-of-type {
+        margin-bottom: 20px;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+}
+main section .links {
+    height: 60%;
+    flex-flow: column nowrap;
+
+}
+
+main section .links a{
+    background-color: var(--grey-700);
+    text-decoration: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+/* mobile */
+@media (max-width:375px){
+    main section .links a {
+    margin-top: 15px;
+    width: 280px;
+    height: 45px;
+    }
+}
+main section .links a:first-child{
+    margin-top: 0;
+}
+/* mobile */
+@media (max-width:375px){
+    main section .links a:first-child{
+        margin-top: 0;
+    }
+}
+main section .links a:hover{
+    background-color: var(--green-main);
+    color: var(--grey-900);
+    
+}
